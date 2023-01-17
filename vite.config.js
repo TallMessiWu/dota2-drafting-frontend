@@ -11,7 +11,7 @@ export default defineConfig({
   // 配置默认根路径
   base: "./",
   server: {
-    host: "0.0.0.0",
+    host: "127.0.0.1",
     port: 666
   },
   plugins: [
