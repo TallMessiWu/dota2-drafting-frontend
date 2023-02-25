@@ -1,7 +1,4 @@
-# Vue 3 + Vite
+# DOTA 2 Draft Prediction and Suggestion
+In Dota2, a multiplayer online battle arena game, the success of a team largely depends on the combination of heroes they choose to play. This project seeks to predict the winning rate of a team in DOTA2 based on the heroes they have selected, and develop a recommendation system to suggest heroes during the pick and ban phase that could potentially increase the team's winning rate. Our research questions that this project aims to answer are how to accurately predict the winning rate of a team in Dota2 using the heroes they choose and how to develop a recommendation system that suggests heroes in each round of the pick and ban phase to improve the team's winning rate.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+[Link to Website](https://tallmessiwu.github.io/dota2-drafting-frontend/)
