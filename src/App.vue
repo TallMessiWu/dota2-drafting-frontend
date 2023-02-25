@@ -1,29 +1,47 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <el-container>
+    <el-header>
+      <el-row justify="center">
+        <el-image :src="getAssetsFile('dota2.svg')" style="width: 40px; margin-right: 10px"></el-image>
+        <h1>DOTA 2 Draft Prediction and Suggestion</h1>
+      </el-row>
+    </el-header>
+    <el-main>
+      <el-row justify="space-evenly">
+        <el-card class="box-card" v-for="(item, index) in descriptionData" :key="index">
+          <template #header>
+            <div>
+              <h3>{{item.title}}</h3>
+            </div>
+          </template>
+          <div>{{item.content}}</div>
+
+        </el-card>
+      </el-row>
+
+
+    </el-main>
+    <el-footer>
+
+    </el-footer>
+  </el-container>
 </template>
 
+<script setup>
+import descriptionData from "./assets/description-data.json"
+import {getAssetsFile} from "./utils/getAssetsFile.js";
+
+</script>
+
+<script>
+export default {
+  name: 'App'
+}
+</script>
+
+
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+  .box-card {
+    width: 400px;
+  }
 </style>

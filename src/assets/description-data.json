@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Background research questions",
+    "content": "In Dota2, a multiplayer online battle arena game, the success of a team largely depends on the combination of heroes they choose to play. This project seeks to predict the winning rate of a team in DOTA2 based on the heroes they have selected, and develop a recommendation system to suggest heroes during the pick and ban phase that could potentially increase the team's winning rate. Our research questions that this project aims to answer are how to accurately predict the winning rate of a team in Dota2 using the heroes they choose and how to develop a recommendation system that suggests heroes in each round of the pick and ban phase to improve the team's winning rate.\n"
+  },
+  {
+    "title": "Data",
+    "content": "The data for this project will be fetched from OpenData.com API and cleaned to only include professional matches for analysis. The dataset will contain match IDs, outcomes, and information on the heroes picked and banned in each match. The hero data will also be retrieved using the API method and combined with the match data to create a comprehensive dataset containing information on all heroes."
+  },
+  {
+    "title": "Methods",
+    "content": "To achieve the research goals, this project will use machine learning techniques such as decision tree on historical Dota2 data to identify the most influential hero features in determining the outcome of a match. The data will be organized into a clear DataFrame, and visualizations will be created to demonstrate the winning rate of each hero against other heroes. This will provide valuable insights into the effectiveness of different hero combinations and inform the recommendation system. The data frames of hero stats and match stats will be combined to get a more comprehensive data frame, and decision tree and random forest models will be used to develop the recommendation system. Currently, the project has processed the draft evaluation model.\n"
+  },
+  {
+    "title": "Summary of findings",
+    "content": ""
+  }
+]
