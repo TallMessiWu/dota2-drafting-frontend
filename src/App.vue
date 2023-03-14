@@ -14,7 +14,7 @@
               <h3>{{ item.title }}</h3>
             </div>
           </template>
-          <div>{{ item.content }}</div>
+          <div style="white-space: pre-wrap">{{ item.content }}</div>
 
         </el-card>
       </el-row>
@@ -925,14 +925,15 @@
       </el-row>
 
       <el-row justify="center" align="middle" style="margin-top: 1vw">
-        <el-button type="primary" :loading="loading" @click="predict">Predict</el-button>
+        <el-button type="primary" @click="randomize" id="randomize">Generate A Game</el-button>
+        <el-button type="primary" :loading="loading" @click="predict" id="predict">Predict</el-button>
       </el-row>
       <el-row justify="center" align="middle" style="margin-top: 1vw">
         <div style="font-weight: bold; margin-left: 1vw">
           Predicted Result:
         </div>
-        <div style="font-weight: bold; margin-left: 1vw; color: red">
-          {{ resultText }}
+        <div style="font-weight: bold; margin-left: 1vw; color: red" v-if="result !== ''">
+          {{ resultText }} ({{ probability }})
         </div>
       </el-row>
     </el-main>
@@ -951,9 +952,9 @@ import heroesInfo from "./assets/heroes-info.json";
 import staticVariables from "./staticVariables.js";
 import {computed, inject} from "vue";
 
-const region = $ref()
-const patch = $ref()
-const firstPickTeamIndex = $ref(0)
+let region = $ref()
+let patch = $ref()
+let firstPickTeamIndex = $ref(0)
 const firstPickTeam = computed(() => {
   return firstPickTeamIndex === 0 ? 'Radiant' : 'Dire'
 })
@@ -961,41 +962,75 @@ const secondPickTeam = computed(() => {
   return firstPickTeamIndex === 0 ? 'Dire' : 'Radiant'
 })
 
-const selection0 = $ref()
-const selection1 = $ref()
-const selection2 = $ref()
-const selection3 = $ref()
-const selection4 = $ref()
-const selection5 = $ref()
-const selection6 = $ref()
-const selection7 = $ref()
-const selection8 = $ref()
-const selection9 = $ref()
-const selection10 = $ref()
-const selection11 = $ref()
-const selection12 = $ref()
-const selection13 = $ref()
-const selection14 = $ref()
-const selection15 = $ref()
-const selection16 = $ref()
-const selection17 = $ref()
-const selection18 = $ref()
-const selection19 = $ref()
-const selection20 = $ref()
-const selection21 = $ref()
-const selection22 = $ref()
-const selection23 = $ref()
+let selection0 = $ref()
+let selection1 = $ref()
+let selection2 = $ref()
+let selection3 = $ref()
+let selection4 = $ref()
+let selection5 = $ref()
+let selection6 = $ref()
+let selection7 = $ref()
+let selection8 = $ref()
+let selection9 = $ref()
+let selection10 = $ref()
+let selection11 = $ref()
+let selection12 = $ref()
+let selection13 = $ref()
+let selection14 = $ref()
+let selection15 = $ref()
+let selection16 = $ref()
+let selection17 = $ref()
+let selection18 = $ref()
+let selection19 = $ref()
+let selection20 = $ref()
+let selection21 = $ref()
+let selection22 = $ref()
+let selection23 = $ref()
 
-let result = $ref()
+let result = $ref("")
 let resultText = computed(() => {
   if (result === undefined) {
     return ''
   }
   return result === 1 ? 'Radiant Win' : 'Dire Win'
 })
+let probability = $ref()
 
 const axios = inject('axios')
 let loading = $ref(false)
+
+async function randomize() {
+  const data = (await axios.get(`${staticVariables.backendAddress}/randomize`)).data
+  region = data[0]
+  patch = data[1]
+  firstPickTeamIndex = data[2]
+  selection0 = data[3][0]
+  selection1 = data[3][1]
+  selection2 = data[3][2]
+  selection3 = data[3][3]
+  selection4 = data[3][4]
+  selection5 = data[3][5]
+  selection6 = data[3][6]
+  selection7 = data[3][7]
+  selection8 = data[3][8]
+  selection9 = data[3][9]
+  selection10 = data[3][10]
+  selection11 = data[3][11]
+  selection12 = data[3][12]
+  selection13 = data[3][13]
+  selection14 = data[3][14]
+  selection15 = data[3][15]
+  selection16 = data[3][16]
+  selection17 = data[3][17]
+  selection18 = data[3][18]
+  selection19 = data[3][19]
+  selection20 = data[3][20]
+  selection21 = data[3][21]
+  selection22 = data[3][22]
+  selection23 = data[3][23]
+  document.getElementById("randomize").blur();
+}
+
 
 async function predict() {
   const selections = [
@@ -1014,8 +1049,11 @@ async function predict() {
     return
   }
   loading = true
-  result = (await axios.get(`${staticVariables.backendAddress}/hero/${region}/${patch}/${firstPickTeamIndex}/${selections}`)).data
+  const data = (await axios.get(`${staticVariables.backendAddress}/hero/${region}/${patch}/${firstPickTeamIndex}/${selections}`)).data
+  result = data[0]
+  probability = data[1]
   loading = false
+  document.getElementById("predict").blur();
 }
 
 </script>
