@@ -126,7 +126,7 @@
                   <template #default>
                     <el-row>
                       <el-col :span="6">
-                        <el-image :src="`http://localhost:5000/hero/${heroId}`" fit="contain"
+                        <el-image :src="`${staticVariables.backendAddress}/hero/${heroId}`" fit="contain"
                                   style="height: 3vw; margin-right: 1vw;"></el-image>
                       </el-col>
                       <el-col :span="18">
@@ -159,7 +159,7 @@
                   <template #default>
                     <el-row>
                       <el-col :span="6">
-                        <el-image :src="`http://localhost:5000/hero/${heroId}`" fit="contain"
+                        <el-image :src="`${staticVariables.backendAddress}/hero/${heroId}`" fit="contain"
                                   style="height: 3vw; margin-right: 1vw;"></el-image>
                       </el-col>
                       <el-col :span="18">
@@ -192,7 +192,7 @@
                   <template #default>
                     <el-row>
                       <el-col :span="6">
-                        <el-image :src="`http://localhost:5000/hero/${heroId}`" fit="contain"
+                        <el-image :src="`${staticVariables.backendAddress}/hero/${heroId}`" fit="contain"
                                   style="height: 3vw; margin-right: 1vw;"></el-image>
                       </el-col>
                       <el-col :span="18">
@@ -225,7 +225,7 @@
                   <template #default>
                     <el-row>
                       <el-col :span="6">
-                        <el-image :src="`http://localhost:5000/hero/${heroId}`" fit="contain"
+                        <el-image :src="`${staticVariables.backendAddress}/hero/${heroId}`" fit="contain"
                                   style="height: 3vw; margin-right: 1vw;"></el-image>
                       </el-col>
                       <el-col :span="18">
@@ -260,7 +260,7 @@
                   <template #default>
                     <el-row>
                       <el-col :span="6">
-                        <el-image :src="`http://localhost:5000/hero/${heroId}`" fit="contain"
+                        <el-image :src="`${staticVariables.backendAddress}/hero/${heroId}`" fit="contain"
                                   style="height: 3vw; margin-right: 1vw;"></el-image>
                       </el-col>
                       <el-col :span="18">
@@ -293,7 +293,7 @@
                   <template #default>
                     <el-row>
                       <el-col :span="6">
-                        <el-image :src="`http://localhost:5000/hero/${heroId}`" fit="contain"
+                        <el-image :src="`${staticVariables.backendAddress}/hero/${heroId}`" fit="contain"
                                   style="height: 3vw; margin-right: 1vw;"></el-image>
                       </el-col>
                       <el-col :span="18">
@@ -326,7 +326,7 @@
                   <template #default>
                     <el-row>
                       <el-col :span="6">
-                        <el-image :src="`http://localhost:5000/hero/${heroId}`" fit="contain"
+                        <el-image :src="`${staticVariables.backendAddress}/hero/${heroId}`" fit="contain"
                                   style="height: 3vw; margin-right: 1vw;"></el-image>
                       </el-col>
                       <el-col :span="18">
@@ -359,7 +359,7 @@
                   <template #default>
                     <el-row>
                       <el-col :span="6">
-                        <el-image :src="`http://localhost:5000/hero/${heroId}`" fit="contain"
+                        <el-image :src="`${staticVariables.backendAddress}/hero/${heroId}`" fit="contain"
                                   style="height: 3vw; margin-right: 1vw;"></el-image>
                       </el-col>
                       <el-col :span="18">
@@ -396,7 +396,7 @@
                   <template #default>
                     <el-row>
                       <el-col :span="6">
-                        <el-image :src="`http://localhost:5000/hero/${heroId}`" fit="contain"
+                        <el-image :src="`${staticVariables.backendAddress}/hero/${heroId}`" fit="contain"
                                   style="height: 3vw; margin-right: 1vw;"></el-image>
                       </el-col>
                       <el-col :span="18">
@@ -429,7 +429,7 @@
                   <template #default>
                     <el-row>
                       <el-col :span="6">
-                        <el-image :src="`http://localhost:5000/hero/${heroId}`" fit="contain"
+                        <el-image :src="`${staticVariables.backendAddress}/hero/${heroId}`" fit="contain"
                                   style="height: 3vw; margin-right: 1vw;"></el-image>
                       </el-col>
                       <el-col :span="18">
@@ -462,7 +462,7 @@
                   <template #default>
                     <el-row>
                       <el-col :span="6">
-                        <el-image :src="`http://localhost:5000/hero/${heroId}`" fit="contain"
+                        <el-image :src="`${staticVariables.backendAddress}/hero/${heroId}`" fit="contain"
                                   style="height: 3vw; margin-right: 1vw;"></el-image>
                       </el-col>
                       <el-col :span="18">
@@ -495,7 +495,7 @@
                   <template #default>
                     <el-row>
                       <el-col :span="6">
-                        <el-image :src="`http://localhost:5000/hero/${heroId}`" fit="contain"
+                        <el-image :src="`${staticVariables.backendAddress}/hero/${heroId}`" fit="contain"
                                   style="height: 3vw; margin-right: 1vw;"></el-image>
                       </el-col>
                       <el-col :span="18">
@@ -532,7 +532,7 @@
                   <template #default>
                     <el-row>
                       <el-col :span="6">
-                        <el-image :src="`http://localhost:5000/hero/${heroId}`" fit="contain"
+                        <el-image :src="`${staticVariables.backendAddress}/hero/${heroId}`" fit="contain"
                                   style="height: 3vw; margin-right: 1vw;"></el-image>
                       </el-col>
                       <el-col :span="18">
@@ -565,7 +565,7 @@
                   <template #default>
                     <el-row>
                       <el-col :span="6">
-                        <el-image :src="`http://localhost:5000/hero/${heroId}`" fit="contain"
+                        <el-image :src="`${staticVariables.backendAddress}/hero/${heroId}`" fit="contain"
                                   style="height: 3vw; margin-right: 1vw;"></el-image>
                       </el-col>
                       <el-col :span="18">
@@ -598,7 +598,7 @@
                   <template #default>
                     <el-row>
                       <el-col :span="6">
-                        <el-image :src="`http://localhost:5000/hero/${heroId}`" fit="contain"
+                        <el-image :src="`${staticVariables.backendAddress}/hero/${heroId}`" fit="contain"
                                   style="height: 3vw; margin-right: 1vw;"></el-image>
                       </el-col>
                       <el-col :span="18">
@@ -631,7 +631,7 @@
                   <template #default>
                     <el-row>
                       <el-col :span="6">
-                        <el-image :src="`http://localhost:5000/hero/${heroId}`" fit="contain"
+                        <el-image :src="`${staticVariables.backendAddress}/hero/${heroId}`" fit="contain"
                                   style="height: 3vw; margin-right: 1vw;"></el-image>
                       </el-col>
                       <el-col :span="18">
@@ -668,7 +668,7 @@
                   <template #default>
                     <el-row>
                       <el-col :span="6">
-                        <el-image :src="`http://localhost:5000/hero/${heroId}`" fit="contain"
+                        <el-image :src="`${staticVariables.backendAddress}/hero/${heroId}`" fit="contain"
                                   style="height: 3vw; margin-right: 1vw;"></el-image>
                       </el-col>
                       <el-col :span="18">
@@ -701,7 +701,7 @@
                   <template #default>
                     <el-row>
                       <el-col :span="6">
-                        <el-image :src="`http://localhost:5000/hero/${heroId}`" fit="contain"
+                        <el-image :src="`${staticVariables.backendAddress}/hero/${heroId}`" fit="contain"
                                   style="height: 3vw; margin-right: 1vw;"></el-image>
                       </el-col>
                       <el-col :span="18">
@@ -734,7 +734,7 @@
                   <template #default>
                     <el-row>
                       <el-col :span="6">
-                        <el-image :src="`http://localhost:5000/hero/${heroId}`" fit="contain"
+                        <el-image :src="`${staticVariables.backendAddress}/hero/${heroId}`" fit="contain"
                                   style="height: 3vw; margin-right: 1vw;"></el-image>
                       </el-col>
                       <el-col :span="18">
@@ -767,7 +767,7 @@
                   <template #default>
                     <el-row>
                       <el-col :span="6">
-                        <el-image :src="`http://localhost:5000/hero/${heroId}`" fit="contain"
+                        <el-image :src="`${staticVariables.backendAddress}/hero/${heroId}`" fit="contain"
                                   style="height: 3vw; margin-right: 1vw;"></el-image>
                       </el-col>
                       <el-col :span="18">
@@ -804,7 +804,7 @@
                   <template #default>
                     <el-row>
                       <el-col :span="6">
-                        <el-image :src="`http://localhost:5000/hero/${heroId}`" fit="contain"
+                        <el-image :src="`${staticVariables.backendAddress}/hero/${heroId}`" fit="contain"
                                   style="height: 3vw; margin-right: 1vw;"></el-image>
                       </el-col>
                       <el-col :span="18">
@@ -837,7 +837,7 @@
                   <template #default>
                     <el-row>
                       <el-col :span="6">
-                        <el-image :src="`http://localhost:5000/hero/${heroId}`" fit="contain"
+                        <el-image :src="`${staticVariables.backendAddress}/hero/${heroId}`" fit="contain"
                                   style="height: 3vw; margin-right: 1vw;"></el-image>
                       </el-col>
                       <el-col :span="18">
@@ -870,7 +870,7 @@
                   <template #default>
                     <el-row>
                       <el-col :span="6">
-                        <el-image :src="`http://localhost:5000/hero/${heroId}`" fit="contain"
+                        <el-image :src="`${staticVariables.backendAddress}/hero/${heroId}`" fit="contain"
                                   style="height: 3vw; margin-right: 1vw;"></el-image>
                       </el-col>
                       <el-col :span="18">
@@ -903,7 +903,7 @@
                   <template #default>
                     <el-row>
                       <el-col :span="6">
-                        <el-image :src="`http://localhost:5000/hero/${heroId}`" fit="contain"
+                        <el-image :src="`${staticVariables.backendAddress}/hero/${heroId}`" fit="contain"
                                   style="height: 3vw; margin-right: 1vw;"></el-image>
                       </el-col>
                       <el-col :span="18">
